@@ -1,0 +1,35 @@
+﻿<Window x:Class="TKVar1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TKVar1"
+        mc:Ignorable="d"
+        Title="Баллы экзамена" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Content="Баллы Экзамена по модулю" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Grid.Row="0" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Задание №1. Максимальное количество баллов = 10" VerticalAlignment="Center"/>
+        <TextBox x:Name="Task1" HorizontalAlignment="Left" Margin="424,0,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Задание №2. Максимальное количество баллов = 50" VerticalAlignment="Center"/>
+        <TextBox x:Name="Task2" HorizontalAlignment="Left" Margin="424,0,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Задание №3. Максимальное количество баллов = 30" VerticalAlignment="Center"/>
+        <TextBox x:Name="Task3" HorizontalAlignment="Left" Margin="424,0,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="Задание №4. Максимальное количество баллов = 10" VerticalAlignment="Center"/>
+        <TextBox x:Name="Task4" HorizontalAlignment="Left" Margin="424,0,0,0" Grid.Row="4" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30"/>
+        <TextBox x:Name="SumBallov" HorizontalAlignment="Left" Margin="200,0,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30" IsReadOnly="True"/>
+        <TextBox x:Name="Grade" HorizontalAlignment="Left" Margin="424,0,0,0" Grid.Row="5" TextWrapping="Wrap" VerticalAlignment="Center" Width="165" Height="30" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="75,0,0,0" Grid.Row="5" TextWrapping="Wrap" Text="Сумма баллов" VerticalAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Right" Margin="0,0,50,0" Grid.Row="5" TextWrapping="Wrap" Text="По 5-ти бальной шкале" VerticalAlignment="Center"/>
+        <Button Content="Рассчитать" HorizontalAlignment="Center" Grid.Row="6" VerticalAlignment="Center" Height="42" Width="144" Click="Button_Click"/>
+
+    </Grid>
+</Window>
